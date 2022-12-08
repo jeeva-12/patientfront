@@ -10,11 +10,19 @@ export class ApiService {
 
   fetchCourses=()=>
   {
-    return this.http.get("http://localhost:8080/view")
+    return this.http.get("http://localhost:8080/viewall");
   }
 
   addCourse=(dataToSend:any)=>
   {
-    return this.http.post("http://localhost:8080/add",dataToSend)
+    return this.http.post("http://localhost:8080/addpat",dataToSend);
+  }
+  searchPatient=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/search",dataToSend)
+  }
+  deletePatient=(dataToSend:any)=>
+  {
+     return this.http.post("http://localhost:8080/delete",dataToSend)
   }
 }

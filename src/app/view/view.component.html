@@ -6,7 +6,7 @@
             
             <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <h1>Employee</h1>
+                    <h1>Paitent</h1>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
@@ -15,7 +15,7 @@
    
     <thead>
       <tr>
-        <th scope="col">Employee ID</th>
+        <th scope="col"> ID</th>
         <th scope="col">Patient Name</th>
         <th scope="col">Address</th>
         <th scope="col">Mobile</th>
@@ -25,19 +25,14 @@
       </tr>
     </thead>
     <tbody>
-
       <tr *ngFor="let i of data"> 
         <td>{{i.id}}</td>
         <td>{{i.patientName}}</td>
         <td>{{i.address}}</td>
         <td>{{i.mobile}}</td>
         <td>{{i.age}}</td>
-        <td>{{i.drName}}</td>
-       
-      
-      </tr>
-      
-      
+        <td>{{i.drName}}</td>  
+      </tr>   
     </tbody>
   </table>
                 </div>
